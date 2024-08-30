@@ -365,7 +365,7 @@ ul {
   height: auto;
 }
 
-.steps__wrapper {
+.steps__container {
   flex-shrink: 1;
   padding-block: 32px;
   margin-left: 64px;
@@ -414,6 +414,84 @@ ul {
   height: 160px;
   fill: rgb(100, 21, 255);
   opacity: 0.15;
+}
+
+/* VALUES */
+.values__container,
+.values__figure {
+  width: 50%;
+}
+
+.values__figure {
+  flex-shrink: 0;
+}
+
+.values__container {
+  flex-shrink: 1;
+  margin-right: 64px;
+}
+
+.values__img {
+  width: 100%;
+  height: auto;
+}
+
+.values__items {
+  display: flex;
+  gap: 32px;
+}
+
+.values__item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+.values__item-header {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  line-height: 24px;
+}
+
+.values__icon {
+  display: flex;
+  padding: 8px;
+  border-radius: 100%;
+  text-align: center;
+}
+
+.values__icon--green {
+  background-color: rgb(154, 230, 180);
+  color: rgb(39, 103, 73);
+}
+.values__icon--red {
+  background-color: rgb(254, 178, 178);
+  color: rgb(155, 44, 44);
+}
+
+.values__icon-svg {
+  width: 20px;
+  height: 20px;
+}
+
+.values__item-title {
+  margin-left: 12px;
+  color: rgb(36, 62, 99);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.values__item-para {
+  margin-top: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.values__button {
+  margin-top: 48px;
+  font-weight: 700;
 }
 /* 
 TODO
