@@ -30,6 +30,11 @@ ul {
   list-style: none;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 /* UTILS */
 .row {
   width: 100%;
@@ -93,6 +98,9 @@ ul {
   font-size: 18px;
   line-height: 29.25px;
   max-width: 600px;
+}
+
+.para--center {
   margin-inline: auto;
 }
 
@@ -168,11 +176,6 @@ ul {
   width: 59%;
 }
 
-.hero__img {
-  width: 100%;
-  height: 100%;
-}
-
 .hero__title {
   font-size: 48px;
   font-weight: 700;
@@ -244,7 +247,6 @@ ul {
   opacity: 0.5;
   margin-top: 16px;
   padding-right: 64px;
-  width: 100%;
 }
 
 /* FEATURES */
@@ -329,8 +331,6 @@ ul {
 }
 
 .quality-work__img {
-  width: 100%;
-  height: auto;
   border-style: solid;
   border-width: 1px;
   border-color: rgb(226, 232, 240);
@@ -358,11 +358,6 @@ ul {
   position: relative;
   display: flex;
   flex-shrink: 0;
-}
-
-.steps__img {
-  width: 100%;
-  height: auto;
 }
 
 .steps__container {
@@ -429,11 +424,6 @@ ul {
 .values__container {
   flex-shrink: 1;
   margin-right: 64px;
-}
-
-.values__img {
-  width: 100%;
-  height: auto;
 }
 
 .values__items {
@@ -609,14 +599,87 @@ ul {
   background-image: var(--card-cta-bg);
 }
 
-/* 
-TODO
+/* TESTIMONIALS */
+.testimonials__figure,
+.testimonials__container {
+  width: 50%;
+}
 
-GENERAL:
-- Decorative background shapes
+.testimonials__container {
+  padding-left: 64px;
+}
 
-NAV:
-- Add hover effect to links
-- Add hover effect to logo
+.review {
+  margin-top: 40px;
+}
 
- */
+.review__title {
+  margin-top: 16px;
+  color: rgb(36, 62, 99);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.review__quote {
+  margin-top: 16px;
+  margin-bottom: 40px;
+  color: rgb(74, 85, 104);
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.stars {
+  display: flex;
+  fill: rgb(246, 173, 85);
+  gap: 4px;
+}
+
+.star {
+  width: 20px;
+}
+
+.review__user-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.review__avatar {
+  display: flex;
+  width: 80px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.review__user-name {
+  font-size: 20px;
+}
+
+.review__user-title {
+  line-height: 24px;
+}
+
+.review__next-btn,
+.review__prev-btn {
+  display: flex;
+  margin-inline: 12px;
+  padding: 16px;
+  color: rgb(100, 21, 255);
+  background-color: rgb(237, 242, 247);
+  border: none;
+  border-radius: 100%;
+}
+
+.review__next-btn svg,
+.review__prev-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.review__nav-spacer {
+  height: 24px;
+  margin-block: 12px;
+  border-right: 1px solid rgb(226, 232, 240);
+  line-height: 24px;
+}
