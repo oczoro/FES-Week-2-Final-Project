@@ -493,6 +493,122 @@ ul {
   margin-top: 48px;
   font-weight: 700;
 }
+
+/* PRICING */
+.cards {
+  margin-top: 64px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  width: calc(100% / 3);
+  max-width: 384px;
+  padding: 8px 32px 0 32px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  --card-text: rgb(26, 32, 44);
+  --card-text-light: rgb(113, 128, 150);
+  --card-text-sub: rgb(160, 174, 192);
+  --card-divider: rgb(226, 232, 240);
+}
+.card.card--green {
+  --card-gradient: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+  --card-cta-text: rgb(237, 242, 247);
+  --card-cta-bg: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+.card.card--purple {
+  background-color: rgb(100, 21, 255);
+  background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+  color: rgb(247, 250, 252);
+  --card-text: rgb(247, 250, 252);
+  --card-text-light: rgb(247, 250, 252);
+  --card-text-sub: rgb(247, 250, 252);
+  --card-divider: rgb(102, 126, 234);
+  --card-cta-text: rgb(71, 15, 181);
+  --card-cta-bg: rgb(247, 250, 252);
+}
+.card.card--red {
+  --card-gradient: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+  --card-cta-text: rgb(238, 243, 247);
+  --card-cta-bg: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+.card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 8px;
+  background-image: var(--card-gradient);
+}
+
+.card__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  color: var(--card-text);
+}
+
+.card__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32.5px;
+}
+
+.card__price {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 78px;
+}
+
+.card__duration {
+  color: var(--card-text-sub);
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  line-height: 26px;
+}
+
+.card__features-wrapper {
+  margin-inline: -32px;
+  padding: 32px;
+  border-top: solid 2px var(--card-divider);
+  border-bottom: solid 2px var(--card-divider);
+  color: var(--card-text-light);
+}
+
+.card__features-title {
+  color: var(--card-text);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+}
+
+.card__feature {
+  margin-top: 20px;
+  line-height: 24px;
+}
+
+.card__cta {
+  display: flex;
+  justify-content: center;
+  padding: 32px 64px;
+}
+
+.card__button {
+  width: 100%;
+  padding: 16px 32px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0.7px;
+  color: var(--card-cta-text);
+  background-image: var(--card-cta-bg);
+}
+
 /* 
 TODO
 
