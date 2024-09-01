@@ -741,6 +741,7 @@ img {
   position: relative;
   isolation: isolate;
   overflow: hidden;
+  margin-bottom: 96px;
   padding-block: 96px;
   background-color: rgb(100, 21, 255);
   border-radius: 8px;
@@ -812,4 +813,120 @@ img {
   color: rgb(80, 17, 204);
   transform: translate(20%, -80%);
   opacity: 0.5;
+}
+
+/* FOOTER */
+.footer {
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(100, 21, 255);
+  margin: 0 -32px -32px -32px;
+  color: rgb(247, 250, 252);
+  isolation: isolate;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.link__title {
+  color: rgb(247, 250, 252);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.link__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  gap: 12px;
+}
+
+.link__item {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__divider {
+  width: 100%;
+  margin-block: 64px;
+  border-bottom: 2px solid rgb(116, 44, 255);
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+.footer__copyright {
+  color: rgb(203, 213, 224);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.footer__logo-img {
+  width: 32px;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 16px;
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background-color: rgb(247, 250, 252);
+  fill: rgb(26, 32, 44);
+  border-radius: 100%;
+}
+
+.footer__social-svg {
+  width: 16px;
+  height: 16px;
+}
+
+.footer__decor-1,
+.footer__decor-2 {
+  position: absolute;
+  z-index: -1;
+  height: 320px;
+  width: 320px;
+  color: rgb(80, 17, 204);
+  opacity: 0.5;
+}
+
+.footer__decor-1 {
+  top: 0;
+  left: 0;
+  transform: translate(-30%, -40%);
+}
+
+.footer__decor-2 {
+  bottom: 0;
+  right: 0;
+  transform: translate(40%, 60%);
 }
