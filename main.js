@@ -7,3 +7,7 @@ function expandFAQ(event) {
   event.children[1].classList.toggle('hidden');
   lastOpenedFAQ = event;
 }
+
+function toggleNavMenu() {
+  document.querySelector('.nav--mobile').classList.toggle('nav--hidden');
+}
