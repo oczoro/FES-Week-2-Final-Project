@@ -79,6 +79,10 @@ img {
   line-height: 45px;
 }
 
+.not-clickable {
+  cursor: not-allowed;
+}
+
 /* COMPONENTS */
 .title {
   margin-top: 16px;
@@ -135,6 +139,11 @@ img {
   line-height: 36px;
   font-weight: 900;
   letter-spacing: 1px;
+  transition: all 0.3 ease;
+}
+
+.logo:hover {
+  color: rgb(100, 21, 255);
 }
 
 .logo__img {
@@ -157,7 +166,16 @@ img {
 
 .nav__item {
   margin: 0 24px;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
 }
+
+.nav__item:hover {
+  color: rgb(100, 21, 255);
+  border-bottom-color: rgb(100, 21, 255);
+}
+
 .nav__item:nth-child(5) {
   margin-left: 48px;
 }
@@ -283,6 +301,11 @@ img {
   padding-block: 16px;
   font-size: 16px;
   font-weight: 700;
+}
+
+.cta__button:hover {
+  background-color: rgb(60, 13, 153);
+  color: rgb(247, 250, 252);
 }
 
 .hero__trusted {
@@ -651,6 +674,11 @@ img {
   background-image: var(--card-cta-bg);
 }
 
+.card__button:hover {
+  transform: translate(1px, -1px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
 /* TESTIMONIALS */
 .testimonials__figure,
 .testimonials__container {
@@ -721,6 +749,12 @@ img {
   background-color: rgb(237, 242, 247);
   border: none;
   border-radius: 100%;
+  transition: all 0.3s ease;
+}
+
+.review__next-btn:hover,
+.review__prev-btn:hover {
+  background-color: rgb(226, 232, 240);
 }
 
 .review__next-btn svg,
@@ -754,6 +788,11 @@ img {
   background-color: rgb(237, 242, 247);
   border-radius: 8px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faq:hover {
+  background-color: rgb(226, 232, 240);
 }
 
 .faq__header {
@@ -829,6 +868,7 @@ img {
   line-height: 24px;
   font-weight: 700;
   padding: 20px 40px;
+  transition: all 0.3s ease;
 }
 
 .get-started__button--primary {
@@ -837,10 +877,18 @@ img {
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
+.get-started__button--primary:hover {
+  background-color: rgb(229, 62, 62);
+  color: rgb(237, 242, 247);
+}
 
 .get-started__button--secondary {
   background-color: transparent;
   border: 1px solid rgb(160, 174, 192);
+}
+.get-started__button--secondary:hover {
+  background-color: rgb(247, 250, 252);
+  color: rgb(100, 21, 255);
 }
 
 .get-started__decor-1 {
@@ -910,6 +958,16 @@ img {
   line-height: 21px;
 }
 
+.link__item a {
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.link__item:hover a {
+  border-bottom-color: rgb(247, 250, 252);
+}
+
 .footer__info {
   display: flex;
   justify-content: space-between;
@@ -955,6 +1013,10 @@ img {
   background-color: rgb(247, 250, 252);
   fill: rgb(26, 32, 44);
   border-radius: 100%;
+  transition: all 0.3s ease;
+}
+.footer__social:hover {
+  background-color: rgb(203, 213, 224);
 }
 
 .footer__social-svg {

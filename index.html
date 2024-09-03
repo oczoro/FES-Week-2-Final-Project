@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Week 2 - Final Project</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
 
@@ -19,23 +19,23 @@
         </a>
         <nav class="nav">
           <ul class="nav__items">
-            <li class="nav__item"><a href="#about">About</a></li>
-            <li class="nav__item"><a href="#blog">Blog</a></li>
-            <li class="nav__item"><a href="#pricing">Pricing</a></li>
-            <li class="nav__item"><a href="#contact">Contact Us</a></li>
-            <li class="nav__item"><a href="#login">Login</a></li>
-            <li><a class="button button--primary" href="#signup">Sign Up</a></li>
+            <li class="nav__item"><a class="not-clickable" href="#about">About</a></li>
+            <li class="nav__item"><a class="not-clickable" href="#blog">Blog</a></li>
+            <li class="nav__item"><a class="not-clickable" href="#pricing">Pricing</a></li>
+            <li class="nav__item"><a class="not-clickable" href="#contact">Contact Us</a></li>
+            <li class="nav__item"><a class="not-clickable" href="#login">Login</a></li>
+            <li><a class="button button--primary not-clickable" href="#signup">Sign Up</a></li>
           </ul>
         </nav>
         <button class="nav__menu--mobile" onclick="toggleNavMenu()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="light___StyledMenuIcon-sc-lj69nl-15 bPlZcF"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
         <nav class="nav--mobile nav--hidden">
           <ul class="nav__items--mobile">
-            <li class="nav__item--mobile"><a href="#about">About</a></li>
-            <li class="nav__item--mobile"><a href="#blog">Blog</a></li>
-            <li class="nav__item--mobile"><a href="#pricing">Pricing</a></li>
-            <li class="nav__item--mobile"><a href="#contact">Contact Us</a></li>
-            <li class="nav__item--mobile"><a href="#login">Login</a></li>
-            <li><a class="nav__button--mobile button button--primary" href="#signup">Sign Up</a></li>
+            <li class="nav__item--mobile"><a class="not-clickable" href="#about">About</a></li>
+            <li class="nav__item--mobile"><a class="not-clickable" href="#blog">Blog</a></li>
+            <li class="nav__item--mobile"><a class="not-clickable" href="#pricing">Pricing</a></li>
+            <li class="nav__item--mobile"><a class="not-clickable" href="#contact">Contact Us</a></li>
+            <li class="nav__item--mobile"><a class="not-clickable" href="#login">Login</a></li>
+            <li><a class="nav__button--mobile button button--primary not-clickable" href="#signup">Sign Up</a></li>
           </ul>
         </nav>
       </div>
@@ -53,7 +53,7 @@
               </p>
               <div class="cta">
                 <input class="cta__input" type="text" placeholder="Your E-mail Address">
-                <button class="cta__button button button--primary">Get Started</button>
+                <button class="cta__button button button--primary not-clickable">Get Started</button>
               </div>
               <div class="hero__trusted">
                 <p class="hero__trusted-para">OUR TRUSTED CUSTOMERS</p>
@@ -180,7 +180,7 @@
                   dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                   aliquip ex ea commodo consequat.
                 </p>
-                <button class="quality-work__button button button--primary">Learn More</button>
+                <button class="quality-work__button button button--primary not-clickable">Learn More</button>
               </div>
             </div>
             <figure class="quality-work__figure">
@@ -282,7 +282,7 @@
                       professional designers.</p>
                   </div>
                 </div>
-                <button class="values__button button button--primary">Learn More</button>
+                <button class="values__button button button--primary not-clickable">Learn More</button>
               </div>
             </div>
             <figure class="values__figure">
@@ -321,7 +321,7 @@
                   </ul>
                 </div>
                 <div class="card__cta">
-                  <button class="card__button button">
+                  <button class="card__button button not-clickable">
                     BUY NOW
                   </button>
                 </div>
@@ -342,7 +342,7 @@
                   </ul>
                 </div>
                 <div class="card__cta">
-                  <button class="card__button button">
+                  <button class="card__button button not-clickable">
                     BUY NOW
                   </button>
                 </div>
@@ -363,7 +363,7 @@
                   </ul>
                 </div>
                 <div class="card__cta">
-                  <button class="card__button button">
+                  <button class="card__button button not-clickable">
                     BUY NOW
                   </button>
                 </div>
@@ -435,14 +435,14 @@
                       </div>
                     </div>
                     <div class="review__nav flex">
-                      <button class="review__prev-btn">
+                      <button class="review__prev-btn not-clickable">
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                           stroke-width="3" viewBox="0 0 24 24">
                           <path d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
                         </svg>
                       </button>
                       <div class="review__nav-spacer"></div>
-                      <button class="review__next-btn">
+                      <button class="review__next-btn not-clickable">
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                           stroke-width="3" viewBox="0 0 24 24">
                           <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
@@ -568,8 +568,8 @@
               <div class="get-started__content">
                 <h5 class="get-started__title">Developers all over the world are happily using Treact.</h5>
                 <div class="get-started__cta flex">
-                  <button class="get-started__button get-started__button--primary button">Get Started</button>
-                  <button class="get-started__button get-started__button--secondary button">Contact Us</button>
+                  <button class="get-started__button get-started__button--primary button not-clickable">Get Started</button>
+                  <button class="get-started__button get-started__button--secondary button not-clickable">Contact Us</button>
                 </div>
               </div>
               <svg viewBox="0 0 600 600" class="get-started__decor-1">
@@ -598,46 +598,46 @@
             <div class="link">
               <h5 class="link__title">MAIN</h5>
               <ul class="link__list">
-                <li class="link__item"><a href="">Blog</a></li>
-                <li class="link__item"><a href="">FAQs</a></li>
-                <li class="link__item"><a href="">Support</a></li>
-                <li class="link__item"><a href="">About Us</a></li>
+                <li class="link__item"><a class="not-clickable" href="">Blog</a></li>
+                <li class="link__item"><a class="not-clickable" href="">FAQs</a></li>
+                <li class="link__item"><a class="not-clickable" href="">Support</a></li>
+                <li class="link__item"><a class="not-clickable" href="">About Us</a></li>
               </ul>
             </div>
             <div class="link">
               <h5 class="link__title">PRODUCT</h5>
               <ul class="link__list">
-                <li class="link__item"><a href="">Log In</a></li>
-                <li class="link__item"><a href="">Personal</a></li>
-                <li class="link__item"><a href="">Business</a></li>
-                <li class="link__item"><a href="">Team</a></li>
+                <li class="link__item"><a class="not-clickable" href="">Log In</a></li>
+                <li class="link__item"><a class="not-clickable" href="">Personal</a></li>
+                <li class="link__item"><a class="not-clickable" href="">Business</a></li>
+                <li class="link__item"><a class="not-clickable" href="">Team</a></li>
               </ul>
             </div>
             <div class="link">
               <h5 class="link__title">PRESS</h5>
               <ul class="link__list">
-                <li class="link__item"><a href="">Logos</a></li>
-                <li class="link__item"><a href="">Events</a></li>
-                <li class="link__item"><a href="">Stories</a></li>
-                <li class="link__item"><a href="">Office</a></li>
+                <li class="link__item"><a class="not-clickable" href="">Logos</a></li>
+                <li class="link__item"><a class="not-clickable" href="">Events</a></li>
+                <li class="link__item"><a class="not-clickable" href="">Stories</a></li>
+                <li class="link__item"><a class="not-clickable" href="">Office</a></li>
               </ul>
             </div>
             <div class="link">
               <h5 class="link__title">TEAM</h5>
               <ul class="link__list">
-                <li class="link__item"><a href="">Career</a></li>
-                <li class="link__item"><a href="">Founders</a></li>
-                <li class="link__item"><a href="">Culture</a></li>
-                <li class="link__item"><a href="">Onboarding</a></li>
+                <li class="link__item"><a class="not-clickable" href="">Career</a></li>
+                <li class="link__item"><a class="not-clickable" href="">Founders</a></li>
+                <li class="link__item"><a class="not-clickable" href="">Culture</a></li>
+                <li class="link__item"><a class="not-clickable" href="">Onboarding</a></li>
               </ul>
             </div>
             <div class="link">
               <h5 class="link__title">LEGAL</h5>
               <ul class="link__list">
-                <li class="link__item"><a href="">GDPR</a></li>
-                <li class="link__item"><a href="">Privacy Policy</a></li>
-                <li class="link__item"><a href="">Terms of Service</a></li>
-                <li class="link__item"><a href="">Disclaimer</a></li>
+                <li class="link__item"><a class="not-clickable" href="">GDPR</a></li>
+                <li class="link__item"><a class="not-clickable" href="">Privacy Policy</a></li>
+                <li class="link__item"><a class="not-clickable" href="">Terms of Service</a></li>
+                <li class="link__item"><a class="not-clickable" href="">Disclaimer</a></li>
               </ul>
             </div>
           </div>
@@ -650,21 +650,21 @@
             </div>
             <small class="footer__copyright">© 2018 Treact Inc. All Rights Reserved.</small>
             <div class="footer__socials">
-              <a class="footer__social" href="">
+              <a class="footer__social not-clickable" href="">
                 <svg class="footer__social-svg" viewBox="0 0 24 24">
                   <path
                     d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z">
                   </path>
                 </svg>
               </a>
-              <a class="footer__social" href="">
+              <a class="footer__social not-clickable" href="">
                 <svg class="footer__social-svg" viewBox="0 0 24 24">
                   <path
                     d="M22.162 5.656a8.384 8.384 0 01-2.402.658A4.196 4.196 0 0021.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 00-7.126 3.814 11.874 11.874 0 01-8.62-4.37 4.168 4.168 0 00-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 01-1.894-.523v.052a4.185 4.185 0 003.355 4.101 4.21 4.21 0 01-1.89.072A4.185 4.185 0 007.97 16.65a8.394 8.394 0 01-6.191 1.732 11.83 11.83 0 006.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 002.087-2.165z">
                   </path>
                 </svg>
               </a>
-              <a class="footer__social" href="">
+              <a class="footer__social not-clickable" href="">
                 <svg class="footer__social-svg" viewBox="0 0 24 24">
                   <path
                     d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z">
