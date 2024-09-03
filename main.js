@@ -11,3 +11,19 @@ function expandFAQ(event) {
 function toggleNavMenu() {
   document.querySelector('.nav--mobile').classList.toggle('nav--hidden');
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+      }
+    });
+  });
+
+  const allAnimatedElements = document.querySelectorAll('.animate');
+
+  allAnimatedElements.forEach((el) => {
+    observer.observe(el);
+  });
+});

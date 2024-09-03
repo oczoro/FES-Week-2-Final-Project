@@ -235,6 +235,68 @@ img {
   letter-spacing: 0.45px;
 }
 
+/* ANIMATIONS */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-110%);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(110%);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#hero.in-view {
+  animation: slideInLeft 0.6s ease backwards;
+}
+
+#features.in-view {
+  animation: slideInRight 0.6s ease backwards;
+}
+
+#quality-work.in-view {
+  animation: slideInLeft 0.6s ease backwards;
+}
+
+#steps.in-view {
+  animation: slideInRight 0.6s ease backwards;
+}
+
+#values.in-view {
+  animation: slideInLeft 0.6s ease backwards;
+}
+
+#pricing.in-view {
+  animation: slideInRight 0.6s ease backwards;
+}
+
+#testimonials.in-view {
+  animation: slideInLeft 0.6s ease backwards;
+}
+
+#faq.in-view {
+  animation: slideInRight 0.6s ease backwards;
+}
+
+#get-started.in-view {
+  animation: slideInLeft 0.6s ease backwards;
+}
+
+#footer.in-view {
+  animation: slideInRight 0.6s ease backwards;
+}
+
 /* HERO */
 .hero__info {
   width: 41%;
