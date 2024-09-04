@@ -400,6 +400,16 @@ img {
   padding-right: 64px;
 }
 
+.hero__decor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 256px;
+  height: 256px;
+  transform: translate(-55%, -53%);
+  opacity: 0.05;
+}
+
 /* FEATURES */
 .features {
   max-width: 1024px;
@@ -637,6 +647,7 @@ img {
 
 /* PRICING */
 .cards {
+  position: relative;
   margin-top: 64px;
 }
 
@@ -647,6 +658,7 @@ img {
   max-width: 384px;
   padding: 8px 32px 0 32px;
   border-radius: 8px;
+  background-color: white;
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   --card-text: rgb(26, 32, 44);
@@ -755,6 +767,17 @@ img {
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
+.card__decor {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  width: 256px;
+  height: 256px;
+  transform: translate(-50%, 50%);
+  opacity: 0.25;
+}
+
 /* TESTIMONIALS */
 .testimonials__figure,
 .testimonials__container {
@@ -847,6 +870,10 @@ img {
 }
 
 /* FAQS */
+#faq {
+  position: relative;
+}
+
 .faqs__container {
   display: flex;
   flex-direction: column;
@@ -901,6 +928,29 @@ img {
   margin-top: 0;
   height: 0;
   opacity: 0;
+}
+
+.faq__decor-1,
+.faq__decor-2 {
+  position: absolute;
+  z-index: -1;
+  width: 256px;
+  height: 256px;
+  opacity: 0.15;
+}
+
+.faq__decor-1 {
+  top: 0;
+  right: 0;
+  color: rgb(79, 209, 197);
+  transform: translate(70%, -15%);
+}
+
+.faq__decor-2 {
+  bottom: 0;
+  left: 0;
+  color: rgb(100, 21, 255);
+  transform: translate(-70%, 20%);
 }
 
 /* GET STARTED */
