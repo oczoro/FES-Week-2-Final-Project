@@ -197,10 +197,14 @@ img {
   border: 1px solid rgb(226, 232, 240);
   border-radius: 8px;
   background-color: white;
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.3s ease;
 }
 
 .nav--hidden {
-  display: none;
+  opacity: 0;
+  transform: translateX(100%);
 }
 
 .nav__menu--mobile {
@@ -210,6 +214,10 @@ img {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.nav__menu-icon--hidden {
+  display: none;
 }
 
 .nav__items--mobile {
@@ -225,6 +233,12 @@ img {
   font-weight: 600;
   line-height: 27px;
   letter-spacing: 0.45px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.nav__item--mobile:hover {
+  color: rgb(100, 21, 255);
+  border-bottom-color: rgb(100, 21, 255);
 }
 
 .nav__button--mobile {

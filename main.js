@@ -8,8 +8,13 @@ function expandFAQ(event) {
   lastOpenedFAQ = event;
 }
 
+const mobileNav = document.querySelector('.nav--mobile');
+const hamburgerIcon = document.querySelector('.nav__menu-icon--hamburger');
+const crossIcon = document.querySelector('.nav__menu-icon--cross');
 function toggleNavMenu() {
-  document.querySelector('.nav--mobile').classList.toggle('nav--hidden');
+  mobileNav.classList.toggle('nav--hidden');
+  hamburgerIcon.classList.toggle('nav__menu-icon--hidden');
+  crossIcon.classList.toggle('nav__menu-icon--hidden');
 }
 
 document.addEventListener('DOMContentLoaded', () => {
